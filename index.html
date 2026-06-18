@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muhammad Furqan Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    .navbar{
+        box-shadow: 10px 10px 10px;
+        position: fixed;
+        top: 5px;
+        left: 5px;
+        width:1330px;
+    }
+
+    #title {
+        background: linear-gradient(rgb(206, 206, 206), gray)
+    }
+
+    article{
+        height: 530px;
+        width: 600px;
+        box-shadow: 10px 10px 10px;
+    }
+
+    #message {
+        height: 200px;
+        width: 1000px
+    }
+
+    textarea {
+        height: 130px;
+        width: 400px;
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 40;
+        box-shadow: 5px 5px 5px black;
+        background-color: aqua;
+        color: white;
+    }
+</style>
+
+<body class="p-2">
+    <nav class="navbar navbar-expand-lg bg-info p-3 rounded-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#banner">
+                <h1>Muhammad Furqan</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#banner">
+                            <h3>Home</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">
+                            <h3>About</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#projects">
+                            <h3>Projects</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact">
+                            <h3>Contact</h3>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="banner" class="d-flex flex-column p-3 gap-3">
+        <div id="title"
+            class=" d-flex flex-column justify-content-center align-items-center p-3 gap-3 vh-100 rounded-3">
+            <h1>Hi, I am <span class="text-primary fw-bold">Muhammad Furqan</span></h1>
+            <h2>I build different websites.</h2>
+            <div class="d-flex flex-row justify-content-center align-items-center p-3 gap-3">
+                <a href="#contact">
+                    <button id="button2" onmouseover="change1()" onmouseleave="change2()" type="button"
+                        class="btn btn-info">
+                        <h4>Contact me</h4>
+                    </button>
+                </a>
+                <a href="#projects">
+                    <button id="button3" onmouseover="change11()" onmouseleave="change22()" type="button"
+                        class="btn btn-secondary">
+                        <h4>View my work</h4>
+                    </button>
+                </a>
+
+            </div>
+        </div>
+    </section>
+    <p>.</p>
+    <p>.</p>
+    <section id="about">
+        <div class="bg-info rounded-5 p-3">
+            <h1 class="text-center">About Me</h1>
+            <div class="d-flex flex-row justify-content-center align-items-center p-3 gap-3 bg-light rounded-3">
+                <div class="d-flex flex-column justify-content-center align-items-center p-3 gap-3">
+                    <h5>I am a passionate software developer specializing in building scallable web applications and
+                        robust
+                        backend systems
+                    </h5>
+                    <p>
+                        With experience in the full software development lifecycle, I focus on writing clean, efficient
+                        code
+                        and creating intuitive user experiences. I thrive on solving complex technical challanges
+                    </p>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center p-3 gap-3">
+                    <h3>Core technologies
+                    </h3>
+                    <div class="d-flex flex-row justify-content-center align-items-center p-3 gap-3">
+                        <h5 class="bg-info p-3 rounded-4">HTML/CSS3</h5>
+                        <h5 class="bg-info p-3 rounded-4">Javasctipt</h5>
+                        <h5 class="bg-info p-3 rounded-4">Bootstrap5</h5>
+                        <h5 class="bg-info p-3 rounded-4">Git/Github</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <p>.</p>
+    <p>.</p>
+    <section id="projects" d-flex flex-column p-3 gap-3>
+        <h1>Featured projects:</h1>
+        <div class="d-flex flex-row justify-content-center align-items-center p-3 bg-white gap-3">
+            <article id="a1" onmouseover="ca1()" onmouseleave="ca11()" class="p-3 bg-info rounded-5">
+                <h1>Google sheets</h1>
+                <h3>Here is a screenshot of this project</h3>
+                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                    <img width="570" src="Google sheet screandhot1.png" alt="">
+                </div>
+                <a target="_blank" href="http://127.0.0.1:5500/Google-Sheets.html">
+                    <h3>View Project</h3>
+                </a>
+            </article>
+            <article id="a2" onmouseover="ca2()" onmouseleave="ca22()" class="p-3 bg-info rounded-5">
+                <h1>Google docs</h1>
+                <h3>Here is a screenshot of this project</h3>
+                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                    <img width="570" src="Google WP screenshot.png" alt="">
+                </div>
+                <a target="_blank" href="http://127.0.0.1:5500/Google-">
+                    <h3>View Project</h3>
+                </a>
+            </article>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center p-3 bg-white gap-3">
+            <article id="a3" onmouseover="ca3()" onmouseleave="ca33()" class="p-3 bg-info rounded-5">
+                <h1>Google Slides</h1>
+                <h3>Here is a screenshot of this project</h3>
+                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                    <img width="570" src="" alt="">
+                </div>
+                <a target="_blank" href="http://127.0.0.1:5500/Google-slides.html">
+                    <h3>View Project</h3>
+                </a>
+            </article>
+            <article id="a4" onmouseover="ca4()" onmouseleave="ca44()" class="p-3 bg-info rounded-5">
+                <h1>Codefun</h1>
+                <h3>Here is a screenshot of this project</h3>
+                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                    <img width="570" src="codefun scrrenshot.png" alt="">
+                </div>
+                <a target="_blank" href="http://127.0.0.1:5500/2FA%20website.html">
+                    <h3>View Project</h3>
+                </a>
+            </article>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center p-3 bg-white gap-3">
+            <article id="a5" onmouseover="ca5()" onmouseleave="ca55()" class="p-3 bg-info rounded-5">
+                <h1>Calculator</h1>
+                <h3>Here is a screenshot of this project</h3>
+                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                    <img width="570" src="calculator screanshot.png" alt="">
+                </div>
+                <a target="_blank" href="http://127.0.0.1:5500/DOM%20Practice2.html">
+                    <h3>View Project</h3>
+                </a>
+            </article>
+            <article id="a6" onmouseover="ca6()" onmouseleave="ca66()" class="p-3 bg-info rounded-5">
+                <h1>Solar system information center</h1>
+                <h3>Here is a screenshot of this project</h3>
+                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                    <img width="570" src="Info screenshot.png" alt="">
+                </div>
+                <a target="_blank" href="https://solar-system-information-center.vercel.app/">
+                    <h3>View Project</h3>
+                </a>
+            </article>
+        </div>
+        
+    </section>
+    <p>.</p>
+    <p>.</p>
+    <section id="contact">
+        <div class="bg-info rounded-5 p-3">
+            <h1 class="text-center">Get in touch</h1>
+            <div class="bg-light d-flex flex-column justify-content-center align-items-center p-3 gap-3 rounded-5">
+                <div class="d-flex flex-row">
+                    <div class="d-flex flex-column">
+                        <h3 class="text-center">Your Name</h3>
+                        <textarea class="text-center" name="name" id="name"></textarea>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h3 class="text-center">Your E-mail</h3>
+                        <textarea class="text-center" name="email" id="email"></textarea>
+                    </div>
+                </div>
+                <h3>Message</h3>
+                <textarea class="text-center" name="message" id="message"></textarea>
+                <button id="button" onmouseover="premium()" onmouseleave="premium2()" type="button"
+                    class="btn btn-info">
+                    <h3>Send</h3>
+                </button>
+                <p>.</p>
+                <h3>Or ....</h3>
+                <p>.</p>
+                <h3>Copy the contact number and contact through whatsapp.</h3>
+                <h2 class="bg-info p-3 rounded-3">+92 345 8540 751</h2>
+
+
+            </div>
+        </div>
+    </section>
+    <script>
+        function premium() {
+            document.getElementById("button").style.backgroundColor = "white"
+            document.getElementById("button").style.color = "aqua"
+        }
+        function premium2() {
+            document.getElementById("button").style.backgroundColor = "aqua"
+            document.getElementById("button").style.color = "white"
+        }
+        function change1() {
+            document.getElementById("button2").style.backgroundColor = "white"
+            document.getElementById("button2").style.color = "aqua"
+        }
+        function change2() {
+            document.getElementById("button2").style.backgroundColor = "aqua"
+            document.getElementById("button2").style.color = "white"
+        }
+        function change11() {
+            document.getElementById("button3").style.backgroundColor = "white"
+            document.getElementById("button3").style.color = "grey"
+        }
+        function change22() {
+            document.getElementById("button3").style.backgroundColor = "grey"
+
+
+
+
+            
+            document.getElementById("button3").style.color = "white"
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
