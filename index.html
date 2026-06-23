@@ -9,7 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <style>
-    .navbar{
+    .navbar {
         box-shadow: 10px 10px 10px;
         position: fixed;
         top: 0px;
@@ -20,7 +20,7 @@
         background: linear-gradient(rgb(206, 206, 206), gray)
     }
 
-    article{
+    article {
         height: 530px;
         width: 600px;
         box-shadow: 10px 10px 10px;
@@ -43,10 +43,24 @@
         background-color: aqua;
         color: white;
     }
+
+    #about {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #projects {
+        padding-top: 100px;
+        padding-bottom:100px;
+    }
+    #contact{
+        padding-top:100px;
+        padding-bottom:100px;
+    }
 </style>
 
 <body class="p-2">
-    <nav class="navbar navbar-expand-lg bg-info rounded-3 container-fluid">
+    <nav class=" navbar navbar-expand-lg bg-info rounded-3 container-fluid">
         <div class="container-fluid">
             <a class="navbar-brand" href="#banner">
                 <h1>Muhammad Furqan</h1>
@@ -85,7 +99,7 @@
             </div>
         </div>
     </nav>
-    <section id="banner" class="d-flex flex-column p-3 gap-3">
+    <section id="banner" class="mb-5 d-flex flex-column gap-3">
         <div id="title"
             class=" d-flex flex-column justify-content-center align-items-center p-3 gap-3 vh-100 rounded-3">
             <h1>Hi, I am <span class="text-primary fw-bold">Muhammad Furqan</span></h1>
@@ -107,8 +121,6 @@
             </div>
         </div>
     </section>
-    <p>.</p>
-    <p>.</p>
     <section id="about">
         <div class="bg-info rounded-5 p-3">
             <h1 class="text-center">About Me</h1>
@@ -138,80 +150,80 @@
         </div>
 
     </section>
-    <p>.</p>
-    <p>.</p>
-    <section id="projects" d-flex flex-column p-3 gap-3>
-        <h1>Featured projects:</h1>
-        <div class="d-flex flex-row justify-content-center align-items-center p-3 bg-white gap-3">
-            <article id="a1" onmouseover="ca1()" onmouseleave="ca11()" class="p-3 bg-info rounded-5">
-                <h1>Google sheets</h1>
-                <h3>Here is a screenshot of this project</h3>
-                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
-                    <img width="570" src="Google sheet screandhot1.png" alt="">
-                </div>
-                <a target="_blank" href="https://google-sheet-pearl.vercel.app/">
-                    <h3>View Project</h3>
-                </a>
-            </article>
-            <article id="a2" onmouseover="ca2()" onmouseleave="ca22()" class="p-3 bg-info rounded-5">
-                <h1>Google docs</h1>
-                <h3>Here is a screenshot of this project</h3>
-                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
-                    <img width="570" src="Google WP screenshot.png" alt="">
-                </div>
-                <a target="_blank" href="https://google-wp.vercel.app/">
-                    <h3>View Project</h3>
-                </a>
-            </article>
+
+    <section id="projects" class="d-flex flex-column">
+        <div>
+            <h1>Featured projects:</h1>
+            <div class="d-flex flex-row justify-content-center align-items-center p-3 bg-white gap-3 my-3">
+                <article id="a1" onmouseover="ca1()" onmouseleave="ca11()" class="p-3 bg-info rounded-5">
+                    <h1>Google sheets</h1>
+                    <h3>Here is a screenshot of this project</h3>
+                    <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                        <img width="570" src="Google sheet screandhot1.png" alt="">
+                    </div>
+                    <a target="_blank" href="https://google-sheet-pearl.vercel.app/">
+                        <h3>View Project</h3>
+                    </a>
+                </article>
+                <article id="a2" onmouseover="ca2()" onmouseleave="ca22()" class="p-3 bg-info rounded-5">
+                    <h1>Google docs</h1>
+                    <h3>Here is a screenshot of this project</h3>
+                    <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                        <img width="570" src="Google WP screenshot.png" alt="">
+                    </div>
+                    <a target="_blank" href="https://google-wp.vercel.app/">
+                        <h3>View Project</h3>
+                    </a>
+                </article>
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center p-3 bg-white gap-3">
+                <article id="a3" onmouseover="ca3()" onmouseleave="ca33()" class="p-3 bg-info rounded-5">
+                    <h1>Google Slides</h1>
+                    <h3>Here is a screenshot of this project</h3>
+                    <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                        <img width="570" src="google slides screenshot.png" alt="">
+                    </div>
+                    <a target="_blank" href="https://google-slides-liard.vercel.app/">
+                        <h3>View Project</h3>
+                    </a>
+                </article>
+                <article id="a4" onmouseover="ca4()" onmouseleave="ca44()" class="p-3 bg-info rounded-5">
+                    <h1>Codefun</h1>
+                    <h3>Here is a screenshot of this project</h3>
+                    <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                        <img width="570" src="codefun scrrenshot.png" alt="">
+                    </div>
+                    <a target="_blank" href="https://codefun-pied.vercel.app/">
+                        <h3>View Project</h3>
+                    </a>
+                </article>
+            </div>
+            <div class="d-flex flex-row justify-content-center align-items-center p-3 bg-white gap-3">
+                <article id="a5" onmouseover="ca5()" onmouseleave="ca55()" class="p-3 bg-info rounded-5">
+                    <h1>Calculator</h1>
+                    <h3>Here is a screenshot of this project</h3>
+                    <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                        <img width="570" src="calculator screanshot.png" alt="">
+                    </div>
+                    <a target="_blank" href="https://calculator-delta-lake.vercel.app/">
+                        <h3>View Project</h3>
+                    </a>
+                </article>
+                <article id="a6" onmouseover="ca6()" onmouseleave="ca66()" class="p-3 bg-info rounded-5">
+                    <h1>Solar system information center</h1>
+                    <h3>Here is a screenshot of this project</h3>
+                    <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
+                        <img width="570" src="Info screenshot.png" alt="">
+                    </div>
+                    <a target="_blank" href="https://solar-system-information-center.vercel.app/">
+                        <h3>View Project</h3>
+                    </a>
+                </article>
+            </div>
         </div>
-        <div class="d-flex flex-row justify-content-center align-items-center p-3 bg-white gap-3">
-            <article id="a3" onmouseover="ca3()" onmouseleave="ca33()" class="p-3 bg-info rounded-5">
-                <h1>Google Slides</h1>
-                <h3>Here is a screenshot of this project</h3>
-                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
-                    <img width="570" src="google slides screenshot.png" alt="">
-                </div>
-                <a target="_blank" href="https://google-slides-liard.vercel.app/">
-                    <h3>View Project</h3>
-                </a>
-            </article>
-            <article id="a4" onmouseover="ca4()" onmouseleave="ca44()" class="p-3 bg-info rounded-5">
-                <h1>Codefun</h1>
-                <h3>Here is a screenshot of this project</h3>
-                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
-                    <img width="570" src="codefun scrrenshot.png" alt="">
-                </div>
-                <a target="_blank" href="https://codefun-pied.vercel.app/">
-                    <h3>View Project</h3>
-                </a>
-            </article>
-        </div>
-        <div class="d-flex flex-row justify-content-center align-items-center p-3 bg-white gap-3">
-            <article id="a5" onmouseover="ca5()" onmouseleave="ca55()" class="p-3 bg-info rounded-5">
-                <h1>Calculator</h1>
-                <h3>Here is a screenshot of this project</h3>
-                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
-                    <img width="570" src="calculator screanshot.png" alt="">
-                </div>
-                <a target="_blank" href="https://calculator-delta-lake.vercel.app/">
-                    <h3>View Project</h3>
-                </a>
-            </article>
-            <article id="a6" onmouseover="ca6()" onmouseleave="ca66()" class="p-3 bg-info rounded-5">
-                <h1>Solar system information center</h1>
-                <h3>Here is a screenshot of this project</h3>
-                <div class="d-flex flex-column justify-content-center align-items-center p-3 bg-white">
-                    <img width="570" src="Info screenshot.png" alt="">
-                </div>
-                <a target="_blank" href="https://solar-system-information-center.vercel.app/">
-                    <h3>View Project</h3>
-                </a>
-            </article>
-        </div>
-        
+
     </section>
-    <p>.</p>
-    <p>.</p>
+
     <section id="contact">
         <div class="bg-info rounded-5 p-3">
             <h1 class="text-center">Get in touch</h1>
@@ -269,7 +281,7 @@
 
 
 
-            
+
             document.getElementById("button3").style.color = "white"
         }
     </script>
